@@ -92,22 +92,19 @@ a {
 .projects {
     background-color: var(--feat-color);
 }
-.projects .container ul li a {
+.projects .container ul li {
     padding: 0.5rem;
     font-size: 17px;
 }
-.projects .container ul li a {
-    text-decoration: none;
-    color: black;
-}
-.projects .container ul li:not(.active) a:hover {
+.projects .container ul li:not(.active):hover {
     color: var(--red-color);
+    cursor: pointer;
 }
-.projects .container ul .active a {
+.projects .container ul .active {
     background-color: var(--red-color);
     border-radius: 50%;
 } 
-.projects .container ul .active a {
+.projects .container ul .active {
     color: var(--yellow-color);
 }
 .projects .container .row .box {
@@ -199,4 +196,7 @@ a {
 .footer .social .facebook {
     color: dodgerblue;
 } 
+.footer a:hover {
+    text-decoration: underline;
+}
 /* End Footer */
